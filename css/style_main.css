@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+   text-decoration: none; 
+}
+.site-navigator-item>a {
+    
+}
