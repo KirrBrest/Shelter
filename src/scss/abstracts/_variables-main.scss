@@ -5,14 +5,42 @@
     src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
   }
 
-* {
+  body {
     margin: 0;
-    padding: 0;
+  }
+
+* {
     box-sizing: border-box;
+    background-color: #F6F6F6;
 }
+
 a {
    text-decoration: none; 
 }
-.site-navigator-item>a {
-    
+
+ul,
+li,
+a {
+  list-style: none;
+  background: none;
 }
+
+.page {
+  width: 1280px;
+ margin: 0 auto;
+}
+
+.not-only {
+  display: flex;
+  background: url(img/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  width: 1280px;
+  padding: 180px 40px 0;
+}
+
+.not-only h1,
+.not-only p,
+.not-only img,
+.not-only a {
+  background: none;
+}
+
