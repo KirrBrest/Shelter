@@ -2,9 +2,8 @@
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
+  src: url("/fonts/georgia/Georgia.ttf") format("ttf");
 }
-
 body {
   margin: 0;
 }
@@ -15,17 +14,19 @@ body {
 }
 
 a {
- text-decoration: none; 
+  text-decoration: none;
 }
 
 ul,
 li,
 a {
-list-style: none;
-background: none;
+  list-style: none;
+  background: none;
 }
 
 .page {
   width: 1280px;
- margin: 0 auto;
+  margin: 0 auto;
 }
+
+/*# sourceMappingURL=style_pets.css~.map */

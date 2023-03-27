@@ -78,12 +78,10 @@ header {
   background: none;
   width: 179px;
   margin: 30px auto 0 44px;
-  align-items: flex-start;
 }
 
 nav {
   background: none;
-  justify-content: flex-end;
 }
 
 .site-navigator {

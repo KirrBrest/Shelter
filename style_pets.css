@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/georgia/Georgia.ttf") format("ttf");
+}
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  background: none;
+}
+
+.page {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+}
+
+.header-logo-top {
+  font-family: Georgia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #545454;
+  background: none;
+  width: 184px;
+}
+
+.header-logo-bottom {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #292929;
+  background: none;
+  width: 179px;
+}
+
+/*# sourceMappingURL=style_pets.css.map */
