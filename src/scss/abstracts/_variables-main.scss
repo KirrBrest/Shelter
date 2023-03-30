@@ -5,8 +5,23 @@
     src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
   }
 
-  body {
+  html {
+    scroll-behavior: smooth;  
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  li {
     margin: 0;
+    padding: 0;
   }
 
 * {
@@ -27,20 +42,6 @@ a {
 
 .page {
   width: 1280px;
- margin: 0 auto;
-}
-
-.not-only {
-  display: flex;
-  background: url(img/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-  width: 1280px;
-  padding: 180px 40px 0;
-}
-
-.not-only h1,
-.not-only p,
-.not-only img,
-.not-only a {
-  background: none;
+  margin: 0 auto;
 }
 
