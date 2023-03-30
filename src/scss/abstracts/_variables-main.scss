@@ -12,21 +12,12 @@
   ::-webkit-scrollbar {
     width: 0;
   }
-  
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
-
+ 
 * {
     box-sizing: border-box;
     background-color: #F6F6F6;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -38,6 +29,11 @@ li,
 a {
   list-style: none;
   background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .page {
