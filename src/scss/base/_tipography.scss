@@ -65,7 +65,7 @@ h2 {
 .about-h3,
 .our-friends-h3,
 .help-h3,
-.in-addition-h3 {
+.donation-h3 {
     font-family: Georgia;
     font-style: normal;
     font-size: 35px;
@@ -117,7 +117,7 @@ h2 {
     color: #292929;
 }
 
-.in-addition-bank {
+.donation-bank {
     font-family: Georgia;
     font-style: normal;
     font-size: 15px;
@@ -127,7 +127,8 @@ h2 {
     color: #545454;
 }
 
-.in-addition-card input{
+.donation-card input,
+.donation-card h4 {
     font-family: Georgia;
     font-style: normal;
     font-size: 20px;
@@ -137,7 +138,7 @@ h2 {
     color: #545454;
 }
 
-.in-addition-text {
+.donation-text {
     font-style: Arial;
     font-style: italic;
     font-size: 12px;

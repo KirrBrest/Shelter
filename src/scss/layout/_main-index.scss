@@ -118,6 +118,7 @@
 // =====================================
 
 .help {
+  background-color: #FFFFFF;
   padding: 80px 40px 100px 40px; 
   display: flex;
   flex-direction: column;
@@ -150,3 +151,38 @@
     justify-content: center;
     align-items: center;
 }
+
+// Section donation
+// ========================================
+
+.donation {
+    padding: 80px 182px 100px 183px;
+}
+
+.donation-wrap {
+    display: flex;
+}
+
+.donation-img {
+    margin: 11px 30px 10px 0;
+}
+
+.donation-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donation-card {
+  width: 349px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #F1CDB3;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+
