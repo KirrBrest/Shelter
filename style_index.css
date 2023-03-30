@@ -30,7 +30,8 @@ a {
   background: none;
 }
 
-img {
+img,
+a {
   display: block;
 }
 
@@ -516,6 +517,13 @@ h2 {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+  transition: color 0.25s;
+}
+
+.footer-a:hover h4,
+.footer-a:hover .footer-img-special {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(101%) contrast(101%);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style_index.css.map */
