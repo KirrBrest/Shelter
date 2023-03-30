@@ -310,4 +310,21 @@ header,
   margin-top: 90px;
 }
 
+.about {
+  padding: 80px 40px 100px 40px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 175px 0 175px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 120px;
+}
+
 /*# sourceMappingURL=style_index.css.map */
