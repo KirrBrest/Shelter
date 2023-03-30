@@ -504,4 +504,18 @@ h2 {
   justify-content: space-between;
 }
 
+.footer-wrap > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+
+.footer-a {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
 /*# sourceMappingURL=style_index.css.map */
