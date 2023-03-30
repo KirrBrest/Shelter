@@ -35,7 +35,9 @@ img {
   display: block;
 }
 
-.page {
+header,
+main,
+footer {
   width: 1280px;
   margin: 0 auto;
 }
@@ -223,7 +225,7 @@ header,
 
 .header-container {
   padding: 30px 40px 0px 40px;
-  background: url(./img/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
+  background: url(./img/noise_transparent2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
 }
 
 .big-header-conteiner {
