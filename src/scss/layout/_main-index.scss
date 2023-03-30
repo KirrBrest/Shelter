@@ -1,0 +1,43 @@
+// Section "about"
+
+.about {
+  padding: 80px 40px 100px 40px; 
+  background-color: #FFFFFF;
+  }
+  
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 175px 0 175px;
+  }
+    
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 120px;
+  }
+
+// Section "our friends" 
+
+.our-friends {
+    background-color: #F6F6F6;
+}
+
+.our-friends-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 40px 100px 40px;
+}
+
+.our-friends-container {
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 58px;
+    
+}
+
+
+
+
