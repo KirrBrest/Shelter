@@ -36,7 +36,7 @@ img {
 
 header,
 main,
-footer {
+.footer-wrap {
   width: 1280px;
   margin: 0 auto;
 }
@@ -59,6 +59,16 @@ header,
 .hero-img,
 .hero-img img,
 .donation-card img,
-.donation-card h4 {
+//.donation-card h4,
+.footer-wrap,
+.footer-wrap>div,
+//.footer-block1 h3,
+//.footer-block2 h3,
+h3,
+h4,
+.footer-map-boston,
+.footer-map-london,
+.footer-major-img,
+.footer-wrap>div>a>img {
   background: none;
 }

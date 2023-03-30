@@ -36,7 +36,7 @@ img {
 
 header,
 main,
-footer {
+.footer-wrap {
   width: 1280px;
   margin: 0 auto;
 }
@@ -59,7 +59,14 @@ header,
 .hero-img,
 .hero-img img,
 .donation-card img,
-.donation-card h4 {
+.footer-wrap,
+.footer-wrap > div,
+h3,
+h4,
+.footer-map-boston,
+.footer-map-london,
+.footer-major-img,
+.footer-wrap > div > a > img {
   background: none;
 }
 
@@ -485,6 +492,16 @@ h2 {
   border-radius: 9px;
   cursor: pointer;
   transition: 0.25s;
+}
+
+.footer {
+  padding: 30px 40px 0px 40px;
+  background: url(./img/noise_transparent2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style_index.css.map */
