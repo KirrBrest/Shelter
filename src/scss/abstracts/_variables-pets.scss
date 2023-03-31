@@ -5,13 +5,21 @@
   src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
 }
 
-body {
-  margin: 0;
+html {
+  scroll-behavior: smooth;  
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 * {
   box-sizing: border-box;
   background-color: #F6F6F6;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  border-width: 0;
 }
 
 a {
@@ -24,8 +32,46 @@ a {
 list-style: none;
 background: none;
 }
+img,
+a {
+display: block;
+}
 
-.page {
-  width: 1280px;
-  margin: 0 auto;
+header,
+main,
+.footer-wrap {
+width: 1280px;
+margin: 0 auto;
+}
+
+header,
+.big-header-conteiner,
+.header-logo,
+.header-logo-top,
+.header-logo-bottom,
+.header-nav,
+.site-navigator,
+.site-navigator-item,
+.site-navigator-item a,
+.not-only,
+.not-only-container1,
+.not-only-container2,
+.not-only-container2 h2,
+.not-only-container2 p,
+.not-only-container2 form,
+.hero-img,
+.hero-img img,
+.donation-card img,
+//.donation-card h4,
+.footer-wrap,
+.footer-wrap>div,
+//.footer-block1 h3,
+//.footer-block2 h3,
+h3,
+h4,
+.footer-map-boston,
+.footer-map-london,
+.footer-major-img,
+.footer-wrap>div>a>img {
+background: none;
 }
