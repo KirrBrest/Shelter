@@ -1,0 +1,48 @@
+.header-container {
+    padding: 30px 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  transition: color 0.35s linear;
+}
+
+.header-logo-top {
+    margin-bottom: 10px;
+  }
+
+.site-navigator {
+  display: flex;
+  gap: 35px;
+}
+  
+.header-nav {
+  margin-top: 16px;
+}
+
+.nav-item-active {
+  border-bottom: 3.5px solid #F1CDB3;
+}
+
+.nav-item:active {
+  border-bottom: 3.5px solid #F1CDB3;
+  transition: .08s;
+}
+
+.nav-item:hover {
+  color: #292929;
+}
+
+.header-logo:hover .header-logo-top {
+  color: #292929;
+}
+    
+.header-logo:hover .header-logo-bottom {
+  color: #545454;
+}
