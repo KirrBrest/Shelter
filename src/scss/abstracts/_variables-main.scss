@@ -41,9 +41,18 @@ a {
 header,
 main,
 .footer-wrap {
-  max-width: 1280px;
+  max-width: $content-width;
   margin: 0 auto;
+  @include media-tablet {
+    min-width: 320px;
+    margin: 0 auto;
+ }
+ @include media-mobile {
+  margin: 0 auto;
+ }
 }
+
+
 
 header,
 .big-header-conteiner,

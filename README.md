@@ -1,1 +1,1 @@
-https://KirrBrest.github.io/shelter/shelter-part2
+https://KirrBrest.github.io/shelter/
