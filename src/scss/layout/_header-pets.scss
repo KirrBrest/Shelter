@@ -4,28 +4,38 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-around;
 }
 
 .header-logo {
   display: flex;
   flex-direction: column;
   transition: color 0.35s linear;
+  margin-right: auto;
 }
 
 .header-logo-top {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
+}
+
+.header-logo-bottom {
+  margin-left: 4px;
+}
+
+.header-nav {
+  margin-top: 16px;
+  display: flex;
+  width: 37%;
+}
 
 .site-navigator {
   display: flex;
-  gap: 35px;
+  //gap: 35px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
 }
   
-.header-nav {
-  margin-top: 16px;
-}
-
 .nav-item-active {
   border-bottom: 3.5px solid #F1CDB3;
 }
