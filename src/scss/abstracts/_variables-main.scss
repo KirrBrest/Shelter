@@ -4,7 +4,7 @@
     font-weight: 400;
     src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
   }
-
+ 
   @font-face {
     font-family: "Arial";
     font-style: normal;
@@ -45,9 +45,9 @@ a {
   display: block;
 }
 
-header,
+.header-container,
 main,
-.footer-wrap {
+footer {
   max-width: $content-width;
   margin: 0 auto;
   @include media-tablet {
@@ -59,7 +59,7 @@ main,
  }
 }
 
-
+ 
 
 header,
 .big-header-conteiner,

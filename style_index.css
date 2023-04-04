@@ -4,6 +4,12 @@
   font-weight: 400;
   src: url("/fonts/georgia/Georgia.ttf") format("ttf");
 }
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/arial/arialmt.ttf") format("ttf");
+}
 html {
   scroll-behavior: smooth;
   font-size: 10px;
@@ -38,24 +44,24 @@ a {
   display: block;
 }
 
-header,
+.header-container,
 main,
-.footer-wrap {
-  max-width: 1280px;
+footer {
+  max-width: 1279px;
   margin: 0 auto;
 }
-@media (max-width: 1280px) {
-  header,
+@media (max-width: 1279px) {
+  .header-container,
   main,
-  .footer-wrap {
+  footer {
     min-width: 320px;
     margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
-  header,
+@media (max-width: 767px) {
+  .header-container,
   main,
-  .footer-wrap {
+  footer {
     margin: 0 auto;
   }
 }
@@ -92,7 +98,7 @@ h4,
 .header-logo-top {
   font-family: Georgia;
   font-style: normal;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -102,25 +108,25 @@ h4,
 .header-logo-bottom {
   font-family: Arial;
   font-style: normal;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 1.5rem;
   letter-spacing: 0.1em;
   color: #FFFFFF;
 }
 
 .nav-item-active {
-  font-style: Arial;
+  font-family: Arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 160%;
   color: #FAFAFA;
 }
 
 .nav-item {
-  font-style: Arial;
+  font-family: Arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 160%;
   color: #CDCDCD;
 }
@@ -128,16 +134,16 @@ h4,
 h2 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: 400;
   line-height: 130%;
   color: #FFFFFF;
 }
 
 .not-only-text {
-  font-style: Arial;
+  font-family: Arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 160%;
   color: #CDCDCD;
@@ -146,7 +152,7 @@ h2 {
 .not-only-btn {
   font-family: Georgia;
   font-style: normal;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -159,7 +165,7 @@ h2 {
 .donation-h3 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -170,7 +176,7 @@ h2 {
 .footer-second-h3 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -179,9 +185,9 @@ h2 {
 
 .about-text1,
 .about-text2 {
-  font-style: Arial;
+  font-family: Arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 160%;
   color: #4C4C4C;
@@ -191,7 +197,7 @@ h2 {
 .help-item-text {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -201,7 +207,7 @@ h2 {
 .our-friends-btn {
   font-family: Georgia;
   font-style: normal;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -211,7 +217,7 @@ h2 {
 .donation-bank {
   font-family: Georgia;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -222,7 +228,7 @@ h2 {
 .donation-card h4 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -230,11 +236,11 @@ h2 {
 }
 
 .donation-text {
-  font-style: Arial;
+  font-family: Arial;
   font-style: italic;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.8rem;
   color: #B2B2B2;
 }
 
@@ -244,7 +250,7 @@ h2 {
 .footer-map-address2 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -255,7 +261,7 @@ h2 {
   padding: 30px 40px 0px 40px;
   background: url(./img/noise_transparent2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .header-container {
     padding: 30px 30px 0px 30px;
   }
@@ -282,7 +288,7 @@ h2 {
 }
 
 .header-nav {
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .nav-item-active {
@@ -309,7 +315,7 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .not-only-container1 {
     display: flex;
     justify-content: space-between;
@@ -326,7 +332,7 @@ h2 {
   margin-bottom: 243px;
   gap: 42px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .not-only-container2 {
     display: flex;
     flex-direction: column;
@@ -360,7 +366,7 @@ h2 {
 .hero-img {
   margin-top: 90px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .hero-img {
     position: relative;
     left: 70px;
@@ -370,20 +376,20 @@ h2 {
   width: 69.8rem;
   height: 72.8rem;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .hero-img img {
     width: 56.9rem;
     height: 59.3rem;
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .header-nav {
     max-width: 768px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-nav {
     display: none;
   }
@@ -420,8 +426,12 @@ h2 {
 
 .our-friends-container {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 60px;
+  justify-content: space-between;
+  margin-top: 61px;
+}
+
+.our-frieds-card-center {
+  margin: 0 40px;
 }
 
 .our-frieds-card {
@@ -440,7 +450,7 @@ h2 {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 30px 0;
+  margin: 28px 0;
 }
 
 .arrow-left,
@@ -491,9 +501,7 @@ h2 {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 261px;
-  height: 52px;
-  margin-top: 60px;
+  margin-top: 57px;
   transition: 0.25s;
   padding-top: 3px;
   background: #F1CDB3;
@@ -514,28 +522,72 @@ h2 {
 .help-items-up {
   display: flex;
   margin-bottom: 59px;
-  justify-content: space-between;
+  padding: 0 85px;
+  gap: 120px;
   align-items: flex-start;
 }
 
 .help-items-down {
   display: flex;
-  margin-bottom: 100px;
-  justify-content: space-around;
+  padding: 0 170px;
+  gap: 119px;
+  align-items: flex-start;
 }
 
 .help-item-text {
   margin-top: 30px;
 }
 
-.help-item-img-wrap {
+.help-item {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.help-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-pet-food {
+  background: url(./img/main/icon-pet-food.svg);
+}
+
+.icon-transportation {
+  background: url(./img/main/icon-transportation.svg);
+}
+
+.icon-toys {
+  background: url(./img/main/icon-toys.svg);
+}
+
+.icon-bowls {
+  background: url(./img/main/icon-bowls-and-cups.svg);
+}
+
+.icon-shampoos {
+  background: url(./img/main/icon-shampoos.svg);
+}
+
+.icon-vitamins {
+  background: url(./img/main/icon-vitamins.svg);
+}
+
+.icon-medicines {
+  background: url(./img/main/icon-medicines.svg);
+}
+
+.icon-collars {
+  background: url(./img/main/icon-collars-leashes.svg);
+}
+
+.icon-sleeping-areas {
+  background: url(./img/main/icon-sleeping-area.svg);
+}
+
 .donation {
-  padding: 80px 182px 100px 183px;
+  padding: 80px 182px 90px 183px;
 }
 
 .donation-wrap {
@@ -543,13 +595,14 @@ h2 {
 }
 
 .donation-img {
-  margin: 11px 30px 10px 0;
+  margin: 4px 15px 10px 0;
 }
 
 .donation-main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .donation-card {
@@ -565,7 +618,7 @@ h2 {
 }
 
 .footer {
-  padding: 30px 40px 0px 40px;
+  padding: 40px 40px 0px 40px;
   background: url(./img/noise_transparent2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
 }
 
@@ -574,17 +627,18 @@ h2 {
   justify-content: space-between;
 }
 
-.footer-wrap > div {
+.footer-wrap div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-bottom: 60px;
 }
 
 .footer-a {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 20px;
   transition: color 0.25s;
 }
@@ -611,7 +665,7 @@ h2 {
   width: 31px;
   height: 25px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .hamburger {
     display: inline-block;
   }
