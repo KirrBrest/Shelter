@@ -1,25 +1,28 @@
 .footer {
-    padding: 30px 40px 0px 40px;
+    padding: 40px 40px 0px 40px;
     background: url(./img/noise_transparent2x.png), 
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;  
   }
-
+             
 .footer-wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-wrap>div {
+.footer-wrap{
+  div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 60px;
+  }
 }
 
 .footer-a {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-end;
   gap: 20px;
   transition: color .25s;
 }
