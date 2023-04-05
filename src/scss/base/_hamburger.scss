@@ -14,8 +14,9 @@
     position: relative;
     width: 31px;
     height: 25px;
-    @include media-tablet {
+    @include media-mobile {
         display: inline-block;
+        background: none;
     }
     &::before {
         @extend %hamburger-line;

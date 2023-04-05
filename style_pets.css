@@ -244,6 +244,17 @@ header {
   color: #545454;
 }
 
+@media (max-width: 1279px) {
+  .header-nav {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
 .footer {
   padding: 40px 40px 0px 40px;
   background: url(./img/noise_transparent2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
@@ -361,7 +372,7 @@ header {
   content: "";
   display: inline-block;
   position: absolute;
-  background-color: #173A56;
+  background-color: #F1CDB3;
   border-radius: 5px;
   width: 100%;
   height: 3px;
@@ -373,9 +384,10 @@ header {
   width: 31px;
   height: 25px;
 }
-@media (max-width: 1279px) {
+@media (max-width: 767px) {
   .hamburger {
     display: inline-block;
+    background: none;
   }
 }
 .hamburger::before {

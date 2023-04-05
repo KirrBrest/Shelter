@@ -57,4 +57,14 @@ header {
   color: #545454;
 }
 
+.header-nav {
+  @include media-tablet {
+   max-width: 768px;
+   
+}
+@include media-mobile {
+  display: none;
+      
+}
 
+}

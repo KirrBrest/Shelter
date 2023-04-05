@@ -6,6 +6,10 @@
     padding: 30px 30px 0px 30px;
     
   }
+  @include media-mobile {
+    
+  }
+
 }
 
 .big-header-conteiner{
@@ -21,6 +25,7 @@
 
 .header-logo-top {
   margin-bottom: 10px;
+ 
 }
 
 .site-navigator {
@@ -51,7 +56,7 @@
 .header-logo:hover .header-logo-bottom {
   color: #F1CDB3;
 }
-   
+    
 .not-only-container1 {
   display: flex;
   justify-content: space-between;
@@ -61,6 +66,8 @@
     flex-direction: column;
     align-items: center;
   }
+
+
 }
 
 .not-only-container2 {
@@ -114,6 +121,12 @@
     height: 59.3rem;
     
   }
+  @include media-mobile {
+    width: 26.0rem;
+    height: 27.177rem;
+    
+  }
+
  }
 }
 
@@ -122,10 +135,10 @@
      max-width: 768px;
      
   }
-}
-
-.header-nav {
   @include media-mobile {
     display: none;
+        
   }
+ 
 }
+
