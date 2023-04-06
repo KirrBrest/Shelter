@@ -603,11 +603,22 @@ h2 {
   align-items: flex-start;
 }
 
+.help-wrapper {
+  max-width: 102.9rem;
+  gap: 5.5rem 12rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
 .help-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .help-item-text {
@@ -664,7 +675,7 @@ h2 {
 }
 
 .donation-img {
-  margin: 4px 15px 10px 0;
+  margin: 6px 15px 10px 0;
 }
 
 .donation-main {
@@ -716,6 +727,10 @@ h2 {
 .footer-a:hover .footer-img-special {
   filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(101%) contrast(101%);
   transform: scale(1.1);
+}
+
+.footer-block2 {
+  margin-right: 4px;
 }
 
 .hamburger__line, .hamburger::after, .hamburger::before {
