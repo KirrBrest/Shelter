@@ -3,6 +3,7 @@
 .about {
   padding: 80px 40px 100px 40px; 
   background-color: #FFFFFF;
+  
   }
   
 .about-wrapper {
@@ -20,13 +21,21 @@
   flex-direction: column;
   justify-content: space-around;
   margin-left: 120px;
+  background-color: #FFFFFF;
+  >* {
+    background-color: #FFFFFF;
+  }
   @include media-tablet {
     margin-left: 0;
     gap: 25px;
   }
 }
 
-.about-img {
+.about__img {
+  background-color: #FFFFFF;
+  >img {
+    background-color: #FFFFFF;
+  }
   @include media-tablet {
     display: flex;
     justify-content: center;
@@ -37,10 +46,6 @@
 
 // Section "our friends" 
 // ==============================
-
-.our-friends {
-    background-color: #F6F6F6;
-}
 
 .our-friends-wrap {
   display: flex;
@@ -192,16 +197,38 @@
     gap: 119px;
     align-items: flex-start;
   }
+ 
+// .help-wrapper {
+//   display: flex;
+//   width: 100%;
+//   //height: 281px;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   justify-content: space-around;
+//   row-gap: 59px;
+//   background-color: #FFFFFF;
+// }
 
-.help-item-text {
-    margin-top: 30px;
-}
+// .help-item {
+//     display: flex;
+//     width: 20%;
+//     height: 113px;
+//     //flex-wrap: wrap; 
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color: #FFFFFF;
+// }
 
 .help-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-item-text {
+  margin-top: 30px;
 }
 
 .help-icon {
