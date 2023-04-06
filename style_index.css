@@ -66,6 +66,8 @@ footer {
   }
 }
 
+h3,
+h4,
 header,
 .big-header-conteiner,
 .header-logo,
@@ -85,13 +87,12 @@ header,
 .hero-img img,
 .donation-card img,
 .footer-wrap,
-.footer-wrap > div,
-h3,
-h4,
+.footer-wrapper,
+.footer-wrapper > div,
 .footer-map-boston,
 .footer-map-london,
 .footer-major-img,
-.footer-wrap > div > a > img {
+.footer-img-special {
   background: none;
 }
 
@@ -597,17 +598,34 @@ h2 {
   justify-content: center;
   background-color: #FFFFFF;
 }
+@media (max-width: 1279px) {
+  .help-wrapper {
+    max-width: 63rem;
+    gap: 5.5rem 6rem;
+    justify-content: flex-start;
+  }
+}
 
 .help-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  max-width: max-content;
+  grid-template-rows: repeat(2, max-content);
+  gap: 3rem;
   background-color: #FFFFFF;
 }
 
-.help-item-text {
-  margin-top: 30px;
+.help-item > :first-child {
+  justify-self: center;
+}
+
+.help-item > :last-child {
+  display: inline-block;
+  text-align: center;
+}
+@media (max-width: 1279px) {
+  .help-item > :last-child {
+    width: 17rem;
+  }
 }
 
 .help-icon {
@@ -658,6 +676,11 @@ h2 {
 .donation-wrap {
   display: flex;
 }
+@media (max-width: 1279px) {
+  .donation-wrap {
+    flex-direction: column-reverse;
+  }
+}
 
 .donation-img {
   margin: 6px 15px 10px 0;
@@ -689,10 +712,20 @@ h2 {
 
 .footer-wrap {
   display: flex;
-  justify-content: space-between;
+}
+@media (max-width: 1279px) {
+  .footer-wrap {
+    flex-direction: column;
+  }
 }
 
-.footer-wrap div {
+.footer-wrapper {
+  max-width: 74rem;
+  display: flex;
+  gap: 16rem;
+  margin-right: auto;
+}
+.footer-wrapper div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -712,10 +745,6 @@ h2 {
 .footer-a:hover .footer-img-special {
   filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(101%) contrast(101%);
   transform: scale(1.1);
-}
-
-.footer-block2 {
-  margin-right: 4px;
 }
 
 .hamburger__line, .hamburger::after, .hamburger::before {

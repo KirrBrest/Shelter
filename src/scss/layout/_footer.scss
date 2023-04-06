@@ -6,10 +6,17 @@
              
 .footer-wrap {
     display: flex;
-    justify-content: space-between;
+    
+    @include media-tablet {
+      flex-direction: column;
+    }
 }
 
-.footer-wrap{
+.footer-wrapper{
+  max-width: 74.0rem;
+  display: flex;
+  gap: 16.0rem;
+  margin-right: auto;
   div {
   display: flex;
   flex-direction: column;
@@ -33,6 +40,3 @@
     transform: scale(1.1);
 }
 
-.footer-block2 {
-  margin-right: 4px;
-}

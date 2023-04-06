@@ -60,7 +60,8 @@ footer {
 }
 
  
-
+h3,
+h4,
 header,
 .big-header-conteiner,
 .header-logo,
@@ -79,16 +80,12 @@ header,
 .hero-img,
 .hero-img img,
 .donation-card img,
-//.donation-card h4,
 .footer-wrap,
-.footer-wrap>div,
-//.footer-block1 h3,
-//.footer-block2 h3,
-h3,
-h4,
+.footer-wrapper,
+.footer-wrapper>div,
 .footer-map-boston,
 .footer-map-london,
 .footer-major-img,
-.footer-wrap>div>a>img {
+.footer-img-special {
   background: none;
 }

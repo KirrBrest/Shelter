@@ -182,42 +182,38 @@
 .help-h3 {
   margin-bottom: 58px;
 }
-
-// .help-items-up {
-//   display: flex;
-//   margin-bottom: 59px;
-//   padding: 0 85px;
-//   gap: 120px;
-//   align-items: flex-start;
-// }
-
-// .help-items-down {
-//     display: flex;
-//     padding: 0 170px;
-//     gap: 119px;
-//     align-items: flex-start;
-//   }
  
-  .help-wrapper {
-    max-width: 102.9rem;
-    gap: 5.5rem 12rem;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #FFFFFF;
+.help-wrapper {
+  max-width: 102.9rem;
+  gap: 5.5rem 12rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+  @include media-tablet {
+    max-width: 63.0rem;
+    gap: 5.5rem 6rem;
+    justify-content: flex-start;
   }
+}  
   
 .help-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  max-width: max-content;
+  grid-template-rows: repeat(2, max-content);
+  gap: 3rem;
   background-color: #FFFFFF;
 }
-
-.help-item-text {
-  margin-top: 30px;
+.help-item > :first-child {
+  justify-self: center;
+}
+.help-item > :last-child {
+  display: inline-block;
+  text-align: center;
+  @include media-tablet {
+  width: 17rem;
+  }
 }
 
 .help-icon {
@@ -262,6 +258,9 @@
 
 .donation-wrap {
     display: flex;
+    @include media-tablet {
+      flex-direction: column-reverse;
+    }
 }
 
 .donation-img {
