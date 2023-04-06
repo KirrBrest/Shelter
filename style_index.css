@@ -337,7 +337,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
     gap: 42px;
   }
 }
@@ -346,6 +346,13 @@ h2 {
   display: flex;
   align-items: center;
   max-width: 460px;
+}
+
+@media (max-width: 1279px) {
+  .our-friends {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .not-only-btn {
@@ -378,7 +385,7 @@ h2 {
 @media (max-width: 1279px) {
   .hero-img img {
     width: 56.9rem;
-    height: 59.3rem;
+    height: 60.3rem;
   }
 }
 @media (max-width: 767px) {
@@ -409,12 +416,32 @@ h2 {
   justify-content: space-between;
   padding: 0 175px 0 175px;
 }
+@media (max-width: 1279px) {
+  .about-wrapper {
+    flex-direction: column-reverse;
+    padding: 0 129px 0 129px;
+  }
+}
 
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 120px;
+}
+@media (max-width: 1279px) {
+  .about-container {
+    margin-left: 0;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .about-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
 }
 
 .our-friends {
@@ -433,9 +460,10 @@ h2 {
   justify-content: space-between;
   margin-top: 61px;
 }
-
-.our-frieds-card-center {
-  margin: 0 40px;
+@media (max-width: 1279px) {
+  .our-friends-container {
+    margin-top: 59px;
+  }
 }
 
 .our-frieds-card {
@@ -448,6 +476,21 @@ h2 {
   height: 435px;
   cursor: pointer;
   background: #FAFAFA;
+}
+@media (max-width: 1279px) {
+  .our-frieds-card {
+    margin-left: 39px;
+  }
+}
+
+.our-frieds-card-center {
+  margin: 0 40px;
+}
+
+@media (max-width: 1279px) {
+  .our-friends_hidden {
+    display: none;
+  }
 }
 
 .our-friends-name {
@@ -471,6 +514,22 @@ h2 {
   transition: 0.25s;
   cursor: pointer;
   text-align: center;
+}
+
+@media (max-width: 1279px) {
+  .arrow-left {
+    position: relative;
+    left: 27px;
+    bottom: 2px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .arrow-right {
+    position: relative;
+    right: 27px;
+    bottom: 2px;
+  }
 }
 
 .arrow-left:hover,

@@ -9,14 +9,31 @@
   display: flex;
   justify-content: space-between;
   padding: 0 175px 0 175px;
+  @include media-tablet {
+    flex-direction: column-reverse;
+    padding: 0 129px 0 129px;
   }
+}
     
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 120px;
+  @include media-tablet {
+    margin-left: 0;
+    gap: 25px;
   }
+}
+
+.about-img {
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
+
 
 // Section "our friends" 
 // ==============================
@@ -36,11 +53,10 @@
   display:flex;
   justify-content: space-between;
   margin-top: 61px;
+  @include media-tablet {
+    margin-top: 59px;
+  }
     
-}
-
-.our-frieds-card-center {
-  margin: 0 40px;
 }
 
 .our-frieds-card {
@@ -53,7 +69,22 @@
   height: 435px;
   cursor: pointer;
   background: #FAFAFA;
+  @include media-tablet {
+    margin-left: 39px;
+    
+  }
 }
+
+.our-frieds-card-center {
+  margin: 0 40px;
+}
+
+.our-friends_hidden {
+  @include media-tablet {
+  display: none;
+  }
+}
+
 
 .our-friends-name {
   display: flex;
@@ -76,6 +107,22 @@
   transition: .25s;
   cursor: pointer;
   text-align: center;
+}
+
+.arrow-left {
+  @include media-tablet {
+    position: relative;
+    left: 27px; 
+    bottom: 2px;
+  }
+}
+
+.arrow-right {
+  @include media-tablet {
+    position: relative;
+    right: 27px; 
+    bottom: 2px;
+    }
 }
 
 .arrow-left:hover,
