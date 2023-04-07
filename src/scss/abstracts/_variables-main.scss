@@ -4,14 +4,22 @@
     font-weight: 400;
     src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
   }
-
-  html {
-    scroll-behavior: smooth;  
+ 
+  @font-face {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/arial/arialmt.ttf") format("ttf"), 
   }
   
-  ::-webkit-scrollbar {
-    width: 0;
-  }
+html {
+  scroll-behavior: smooth;  
+  font-size: 10px;
+}
+  
+::-webkit-scrollbar {
+  width: 0;
+}
  
 * {
   box-sizing: border-box;
@@ -40,10 +48,20 @@ a {
 header,
 main,
 .footer-wrap {
-  width: 1280px;
+  max-width: $content-width;
   margin: 0 auto;
+  @include media-tablet {
+    max-width: $tablet-width;
+    margin: 0 auto;
+  }
+  @include media-mobile {
+   margin: 0 auto;
+  }
 }
 
+ 
+h3,
+h4,
 header,
 .big-header-conteiner,
 .header-logo,
@@ -62,16 +80,12 @@ header,
 .hero-img,
 .hero-img img,
 .donation-card img,
-//.donation-card h4,
 .footer-wrap,
-.footer-wrap>div,
-//.footer-block1 h3,
-//.footer-block2 h3,
-h3,
-h4,
+.footer-wrapper,
+.footer-wrapper>div,
 .footer-map-boston,
 .footer-map-london,
 .footer-major-img,
-.footer-wrap>div>a>img {
+.footer-img-special {
   background: none;
 }

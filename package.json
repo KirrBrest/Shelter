@@ -1,0 +1,13 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "https://KirrBrest.github.io/shelter/",
+  "main": "index.js",
+  "scripts": {
+    "style1": "sass --watch src/scss/main_index.scss style_index.css",
+    "style2": "sass --watch src/scss/main_pets.scss style_pets.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
