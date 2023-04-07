@@ -7,7 +7,7 @@
     
   }
   @include media-mobile {
-    
+    padding: 30px 30px 0px 30px;
   }
 
 }
@@ -28,9 +28,14 @@
  
 }
 
+.header-logo-bottom {
+  margin-left: 5px;
+ 
+}
+
 .site-navigator {
   display: flex;
-  gap: 35px;
+  gap: 36px;
 }
 
 .header-nav {

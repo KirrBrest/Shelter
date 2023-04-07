@@ -44,24 +44,24 @@ a {
   display: block;
 }
 
-.header-container,
+header,
 main,
-footer {
+.footer-wrap {
   max-width: 1279px;
   margin: 0 auto;
 }
 @media (max-width: 1279px) {
-  .header-container,
+  header,
   main,
-  footer {
-    min-width: 320px;
+  .footer-wrap {
+    max-width: 767px;
     margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
-  .header-container,
+  header,
   main,
-  footer {
+  .footer-wrap {
     margin: 0 auto;
   }
 }
@@ -267,6 +267,12 @@ h2 {
     padding: 30px 30px 0px 30px;
   }
 }
+@media (max-width: 767px) {
+  .header-container {
+    padding: 30px 30px 0px 30px;
+  }
+}
+
 .big-header-conteiner {
   display: flex;
   justify-content: space-between;
@@ -282,9 +288,13 @@ h2 {
   margin-bottom: 10px;
 }
 
+.header-logo-bottom {
+  margin-left: 5px;
+}
+
 .site-navigator {
   display: flex;
-  gap: 35px;
+  gap: 36px;
 }
 
 .header-nav {
@@ -416,6 +426,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 0 175px 0 175px;
+  background-color: #FFFFFF;
 }
 @media (max-width: 1279px) {
   .about-wrapper {
@@ -456,10 +467,16 @@ h2 {
 }
 
 .our-friends-wrap {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 80px 40px 100px 40px;
+}
+@media (max-width: 1279px) {
+  .our-friends-wrap {
+    padding: 80px 0 100px 0;
+  }
 }
 
 .our-friends-container {
@@ -584,6 +601,11 @@ h2 {
   flex-direction: column;
   text-align: center;
 }
+@media (max-width: 1279px) {
+  .help {
+    padding: 82px 40px 100px 40px;
+  }
+}
 
 .help-h3 {
   margin-bottom: 58px;
@@ -633,6 +655,10 @@ h2 {
   height: 60px;
 }
 
+.help-item-text {
+  background-color: #FFFFFF;
+}
+
 .icon-pet-food {
   background: url(./img/main/icon-pet-food.svg);
 }
@@ -672,6 +698,11 @@ h2 {
 .donation {
   padding: 80px 182px 90px 183px;
 }
+@media (max-width: 1279px) {
+  .donation {
+    padding: 80px 132px 100px 131px;
+  }
+}
 
 .donation-wrap {
   display: flex;
@@ -685,12 +716,24 @@ h2 {
 .donation-img {
   margin: 6px 15px 10px 0;
 }
+@media (max-width: 1279px) {
+  .donation-img {
+    margin: 0;
+  }
+}
 
 .donation-main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+}
+@media (max-width: 1279px) {
+  .donation-main {
+    margin-left: 62px;
+    margin-bottom: 60px;
+    max-width: 380px;
+  }
 }
 
 .donation-card {
@@ -709,6 +752,11 @@ h2 {
   padding: 40px 40px 0px 40px;
   background: url(./img/noise_transparent2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
 }
+@media (max-width: 1279px) {
+  .footer {
+    padding: 30px 64px 0 64px;
+  }
+}
 
 .footer-wrap {
   display: flex;
@@ -725,12 +773,22 @@ h2 {
   gap: 16rem;
   margin-right: auto;
 }
+@media (max-width: 1279px) {
+  .footer-wrapper {
+    gap: 6.1rem;
+  }
+}
 .footer-wrapper div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 18px;
   padding-bottom: 60px;
+}
+@media (max-width: 1279px) {
+  .footer-wrapper div {
+    padding: 0;
+  }
 }
 
 .footer-a {
@@ -740,11 +798,22 @@ h2 {
   gap: 20px;
   transition: color 0.25s;
 }
+@media (max-width: 1279px) {
+  .footer-a {
+    margin-top: 32px;
+  }
+}
 
 .footer-a:hover h4,
 .footer-a:hover .footer-img-special {
   filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%) hue-rotate(44deg) brightness(101%) contrast(101%);
   transform: scale(1.1);
+}
+
+@media (max-width: 1279px) {
+  .footer-major-img {
+    margin: 65px auto;
+  }
 }
 
 .hamburger__line, .hamburger::after, .hamburger::before {

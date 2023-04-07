@@ -2,6 +2,9 @@
     padding: 40px 40px 0px 40px;
     background: url(./img/noise_transparent2x.png), 
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;  
+    @include media-tablet {
+      padding: 30px 64px 0 64px;
+    }
   }
              
 .footer-wrap {
@@ -17,12 +20,19 @@
   display: flex;
   gap: 16.0rem;
   margin-right: auto;
+  @include media-tablet {
+    gap: 6.1rem;
+  }
+
   div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 18px;
   padding-bottom: 60px;
+    @include media-tablet {
+      padding: 0;
+    }
   }
 } 
 
@@ -32,6 +42,9 @@
   align-items: center;
   gap: 20px;
   transition: color .25s;
+  @include media-tablet {
+    margin-top: 32px;
+  }
 }
  
 .footer-a:hover h4,
@@ -40,3 +53,9 @@
     transform: scale(1.1);
 }
 
+.footer-major-img {
+  @include media-tablet {
+  margin: 65px auto;
+  
+  }
+}

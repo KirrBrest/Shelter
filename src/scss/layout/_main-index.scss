@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 175px 0 175px;
+  background-color: #FFFFFF;
   @include media-tablet {
     flex-direction: column-reverse;
     padding: 0 129px 0 129px;
@@ -48,10 +49,15 @@
 // ==============================
 
 .our-friends-wrap {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 80px 40px 100px 40px;
+  @include media-tablet {
+    padding: 80px 0 100px 0;
+  
+  }
 }
 
 .our-friends-container {
@@ -177,6 +183,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  @include media-tablet {
+    padding: 82px 40px 100px 40px;
+  }
 }
 
 .help-h3 {
@@ -221,6 +230,10 @@
   height: 60px;
 }
 
+.help-item-text {
+  background-color: #FFFFFF
+}
+
 .icon-pet-food {
   background: url(./img/main/icon-pet-food.svg);
 }
@@ -254,17 +267,24 @@
 
 .donation {
     padding: 80px 182px 90px 183px;
+    @include media-tablet {
+      padding: 80px 132px 100px 131px;
+    }
 }
 
 .donation-wrap {
     display: flex;
     @include media-tablet {
       flex-direction: column-reverse;
+     
     }
 }
 
 .donation-img {
     margin: 6px 15px 10px 0;
+    @include media-tablet {
+      margin: 0;
+    }
 }
 
 .donation-main {
@@ -272,6 +292,11 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+  @include media-tablet {
+    margin-left: 62px;
+    margin-bottom: 60px;
+    max-width: 380px;
+  }
   
 }
 
