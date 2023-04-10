@@ -4,8 +4,15 @@
   font-weight: 400;
   src: url("/fonts/georgia/Georgia.ttf") format("ttf");
 }
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/arial/arialmt.ttf") format("ttf");
+}
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -27,20 +34,17 @@ a {
 
 ul,
 li,
-a {
+a,
+img {
   list-style: none;
   background: none;
-}
-
-img,
-a {
   display: block;
 }
 
-header,
+.header-container,
 main,
-.footer-wrap {
-  width: 1280px;
+footer {
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -76,7 +80,7 @@ h4,
 .header-logo-top {
   font-family: Georgia;
   font-style: normal;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -86,25 +90,25 @@ h4,
 .header-logo-bottom {
   font-family: Arial;
   font-style: normal;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 1.5rem;
   letter-spacing: 0.1em;
   color: #292929;
 }
 
 .nav-item-active {
-  font-style: Arial;
+  font-family: Arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 160%;
   color: #292929;
 }
 
 .nav-item {
-  font-style: Arial;
+  font-family: Arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 160%;
   color: #545454;
 }
@@ -112,7 +116,7 @@ h4,
 .our-friends-h3 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -122,7 +126,7 @@ h4,
 .our-friends-name {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -132,7 +136,7 @@ h4,
 .our-friends-btn {
   font-family: Georgia;
   font-style: normal;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -142,7 +146,7 @@ h4,
 .pagination-active {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -152,7 +156,7 @@ h4,
 .pagination-inactive {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -163,7 +167,7 @@ h4,
 .footer-second-h3 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -176,7 +180,7 @@ h4,
 .footer-map-address2 {
   font-family: Georgia;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -185,30 +189,41 @@ h4,
 
 .header-container {
   padding: 30px 40px;
+  background-color: #FFFFFF;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  background-color: #FFFFFF;
 }
 
 .header-logo {
   display: flex;
   flex-direction: column;
   transition: color 0.35s linear;
+  margin-right: auto;
 }
 
 .header-logo-top {
   margin-bottom: 10px;
 }
 
-.site-navigator {
-  display: flex;
-  gap: 35px;
+.header-logo-bottom {
+  margin-left: 4px;
 }
 
 .header-nav {
   margin-top: 16px;
+  display: flex;
+  width: 37%;
+  background-color: #FFFFFF;
+}
+
+.site-navigator {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
 }
 
 .nav-item-active {
@@ -232,8 +247,19 @@ header {
   color: #545454;
 }
 
+@media (max-width: 1279px) {
+  .header-nav {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
 .footer {
-  padding: 30px 40px 0px 40px;
+  padding: 40px 40px 0px 40px;
   background: url(./img/noise_transparent2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
 }
 
@@ -242,7 +268,7 @@ header {
   justify-content: space-between;
 }
 
-.footer-wrap > div {
+.footer-wrap div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,6 +279,7 @@ header {
 .footer-a {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 20px;
   transition: color 0.25s;
 }
@@ -296,6 +323,7 @@ header {
   cursor: pointer;
   background-color: #FAFAFA;
   border-radius: 9px;
+  padding-top: 15px;
 }
 
 .our-frieds-card:hover .our-friends-btn {
@@ -320,6 +348,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 14px;
 }
 
 .pets-pag {
@@ -340,6 +369,42 @@ header {
 
 .pagination-active:hover {
   background: #FDDCC4;
+}
+
+.hamburger__line, .hamburger::after, .hamburger::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #F1CDB3;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 31px;
+  height: 25px;
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: inline-block;
+    background: none;
+  }
+}
+.hamburger::before {
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+  left: 0;
 }
 
 /*# sourceMappingURL=style_pets.css.map */

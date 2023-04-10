@@ -5,8 +5,17 @@
   src: url("/fonts/georgia/Georgia.ttf") format("ttf"), 
 }
 
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/arial/arialmt.ttf") format("ttf"), 
+}
+
+
 html {
   scroll-behavior: smooth;  
+  font-size: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -28,19 +37,17 @@ a {
 
 ul,
 li,
-a {
+a,
+img {
 list-style: none;
 background: none;
-}
-img,
-a {
 display: block;
 }
-
-header,
+ 
+.header-container,
 main,
-.footer-wrap {
-width: 1280px;
+footer {
+max-width: 1280px;
 margin: 0 auto;
 }
 
